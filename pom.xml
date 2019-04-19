@@ -11,8 +11,6 @@
 		</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
-
-	 <distributionManagement>
    <!-- use the following if you're not using a snapshot version. -->
     <properties>
         <dependency.check.report.dir>${project.build.directory}/dependency-check</dependency.check.report.dir>
@@ -23,6 +21,7 @@
         <sonar.dependencyCheck.reportPath>${dependency.check.report.dir}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
         <sonar.dependencyCheck.htmlReportPath>${dependency.check.report.dir}/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
     </properties>
+	 <distributionManagement>
    <repository>
      <id>central</id>
      <name>central</name>
