@@ -18,8 +18,8 @@
         <maven.compiler.target>1.6</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> -->
 <!--         <sonar.host.url>http://localhost:9000/</sonar.host.url> -->
-        <sonar.dependencyCheck.reportPath>${dependency.check.report.dir}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
-        <sonar.dependencyCheck.htmlReportPath>${dependency.check.report.dir}/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+        <sonar.dependencyCheck.reportPath>/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
+        <sonar.dependencyCheck.htmlReportPath>/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
     </properties>
 	 <distributionManagement>
    <repository>
