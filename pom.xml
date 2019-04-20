@@ -51,19 +51,18 @@
 					<xmlOutput>true</xmlOutput>
 				</configuration>
 			</plugin>
-		    <plugin>
-			<groupId>org.owasp</groupId>
-			<artifactId>dependency-check-maven</artifactId>
-			<version>2.1.1</version>
-			<reportSets>
-			    <reportSet>
-				<reports>
-				    <report>aggregate</report>
-				</reports>
-			    </reportSet>
-			</reportSets>
-		    </plugin>
-		</plugins>
+                    <plugin>
+                        <groupId>org.owasp</groupId>
+                        <artifactId>dependency-check-maven</artifactId>
+                        <version>5.0.0-M2</version>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>aggregate</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
 	</reporting>
 
 	<build>
@@ -85,6 +84,21 @@
 			    <artifactId>sonar-maven-plugin</artifactId>
 			    <version>3.5.0.1254</version>
 			</plugin>
+		     <plugin>
+		      <groupId>org.owasp</groupId>
+		      <artifactId>dependency-check-maven</artifactId>
+		      <version>5.0.0-M2</version>
+		      <executions>
+			  <execution>
+			      <goals>
+				  <goal>check</goal>
+			      </goals>
+			  </execution>
+		      </executions>
+			    <configuration>
+				<format>XML</format>
+			    </configuration>
+		    </plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
