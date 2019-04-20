@@ -62,9 +62,6 @@
 				</reports>
 			    </reportSet>
 			</reportSets>
-			<configuration>
-		             <format>XML</format>
-			</configuration>
 		    </plugin>
 		</plugins>
 	</reporting>
